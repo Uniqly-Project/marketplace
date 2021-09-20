@@ -1,0 +1,23 @@
+{
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "truffle compile",
+    "test": "truffle test",
+    "start": "truffle migrate",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:testnet": "truffle migrate --network testnet",
+    "deploy:dev": "truffle migrate --network development",
+    "reset:testnet": "truffle migrate --network testnet --reset"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "truffle": "^5.3.9",
+    "truffle-flattener": "^1.5.0"
+  }
+}
